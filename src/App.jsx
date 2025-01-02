@@ -10,7 +10,7 @@ import Counter from "./Counter";
 import Api from "./Api";
 import Todo from "./todo";
 import Bg from "./Bg";
-import Route from "./Route";
+
 import Weather from "./weather";
 import SearchBar from "./SearchBar";
 import Page from "./Page";
@@ -21,13 +21,26 @@ import CountRedu from "./CountRedu";
 import Multistate from "./Multistate";
 import Image from "./Image";
 import Digiclock from "./Digiclock";
-import TooltipTest from "./Tooltip/test"
-
+import TooltipTest from "./Tooltip/test";
+import Home from "./RouterApp/pages/Home";
+import About from "./RouterApp/pages/About";
+import Contact from "./RouterApp/pages/Contact";
+import { Routes, Route, Link } from "react-router-dom";
+import Router from "./RouterApp/Router";
 
 const App = () => {
-  const items = ["1","2","3","uvg e uy","ndvhu",'uejnhevv','kwtfkdru','dgdkguig','khffj']
+  const items = [
+    "1",
+    "2",
+    "3",
+    "uvg e uy",
+    "ndvhu",
+    "uejnhevv",
+    "kwtfkdru",
+    "dgdkguig",
+    "khffj",
+  ];
 
-  
   return (
     <div>
       {/* <One></One> */}
@@ -41,7 +54,7 @@ const App = () => {
       {/* 9<Api></Api> */}
       {/* 10 <Todo></Todo> */}
       {/* 11<Bg></Bg> */}
-      {/* <Route></Route>not completed */}
+
       {/* 13<Weather></Weather> */}
       {/* 14<SearchBar items={items}></SearchBar> */}
       {/* 15 <Page items={items} perPage={2} ></Page> */}
@@ -52,11 +65,9 @@ const App = () => {
       {/* 20<Multistate></Multistate> */}
       {/* 21<Image></Image> */}
       {/* 22<Digiclock></Digiclock> */}
-      <TooltipTest></TooltipTest>
+      {/* 23<TooltipTest></TooltipTest> */}
+      <Router></Router>
       
-      
-      
-
     </div>
   );
 };
