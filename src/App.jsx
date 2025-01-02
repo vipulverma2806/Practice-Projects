@@ -21,6 +21,7 @@ import CountRedu from "./CountRedu";
 import Multistate from "./Multistate";
 import Image from "./Image";
 import Digiclock from "./Digiclock";
+import TooltipTest from "./Tooltip/test"
 
 
 const App = () => {
@@ -50,7 +51,8 @@ const App = () => {
       {/* 19<CountRedu></CountRedu> */}
       {/* 20<Multistate></Multistate> */}
       {/* 21<Image></Image> */}
-      <Digiclock></Digiclock>
+      {/* 22<Digiclock></Digiclock> */}
+      <TooltipTest></TooltipTest>
       
       
       
