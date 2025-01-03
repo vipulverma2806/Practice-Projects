@@ -22,12 +22,8 @@ import Multistate from "./Multistate";
 import Image from "./Image";
 import Digiclock from "./Digiclock";
 import TooltipTest from "./Tooltip/test";
-import Home from "./RouterApp/pages/Home";
-import About from "./RouterApp/pages/About";
-import Contact from "./RouterApp/pages/Contact";
-import { Routes, Route, Link } from "react-router-dom";
-import Router from "./RouterApp/Router";
 import { BrowserRouter } from "react-router-dom";
+import Router from "./RouterApp/Router";
 
 const App = () => {
   const items = [
@@ -67,9 +63,10 @@ const App = () => {
       {/* 21<Image></Image> */}
       {/* 22<Digiclock></Digiclock> */}
       {/* 23<TooltipTest></TooltipTest> */}
-      <BrowserRouter>
+
+      {/* 24<BrowserRouter>
         <Router></Router>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 };
