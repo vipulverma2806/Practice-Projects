@@ -27,6 +27,7 @@ import About from "./RouterApp/pages/About";
 import Contact from "./RouterApp/pages/Contact";
 import { Routes, Route, Link } from "react-router-dom";
 import Router from "./RouterApp/Router";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   const items = [
@@ -66,8 +67,9 @@ const App = () => {
       {/* 21<Image></Image> */}
       {/* 22<Digiclock></Digiclock> */}
       {/* 23<TooltipTest></TooltipTest> */}
-      <Router></Router>
-      
+      <BrowserRouter>
+        <Router></Router>
+      </BrowserRouter>
     </div>
   );
 };
