@@ -21,7 +21,7 @@ import CountRedu from "./CountRedu";
 import Multistate from "./Multistate";
 import Image from "./Image";
 import Digiclock from "./Digiclock";
-import TooltipTest from "./Tooltip/test";
+import Tooltip from "./Tooltip/Tooltip";
 import { BrowserRouter } from "react-router-dom";
 import Router from "./RouterApp/Router";
 
@@ -62,7 +62,7 @@ const App = () => {
       {/* 20<Multistate></Multistate> */}
       {/* 21<Image></Image> */}
       {/* 22<Digiclock></Digiclock> */}
-      {/* 23<TooltipTest></TooltipTest> */}
+      23<Tooltip></Tooltip>
 
       {/* 24<BrowserRouter>
         <Router></Router>

@@ -1,17 +1,17 @@
-.tooltip-container{
+.Container{
+    background-color: gray;
     position: relative;
-    display: inline-block;
-    background-color: red;
+    display:inline-block;
 }
-
 .tooltip{
-    position: absolute;
-    /* top:         translateX(-50%); */
-    transform:  translateX(calc(-100% - 50px));                        
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    min-width: 200px;
+    background-color: brown;
+    color: aliceblue;
+    min-width: 40px;
+    min-height: 40px;
+    position:absolute;
+    transform : translate3d(12%,12%,0);
+    border-radius: 5px;
+    padding:20px;
+    text-align: center;
+
 }
