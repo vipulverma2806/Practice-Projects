@@ -1,8 +1,8 @@
 import React from "react";
-// import {One} from './One'
-// import Two from './two'
-// import Three from './Three';
-// import Four from './four';
+import {One} from './One'
+import Two from './two'
+import Three from './Three';
+import Four from './four';
 import Five from "./Five";
 import Six from "./Six";
 import Seven from "./Seven";
@@ -24,6 +24,8 @@ import Digiclock from "./Digiclock";
 import Tooltip from "./Tooltip/Tooltip";
 import { BrowserRouter } from "react-router-dom";
 import Router from "./RouterApp/Router";
+import RandomQuoteGenerator from "./Quote/Quote";
+import Quotes from "./Quote/Quotes";
 
 const App = () => {
   const items = [
@@ -62,11 +64,14 @@ const App = () => {
       {/* 20<Multistate></Multistate> */}
       {/* 21<Image></Image> */}
       {/* 22<Digiclock></Digiclock> */}
-      23<Tooltip></Tooltip>
+      {/* 23<Tooltip></Tooltip> */}
 
       {/* 24<BrowserRouter>
         <Router></Router>
       </BrowserRouter> */}
+      {/* 25 <RandomQuoteGenerator></RandomQuoteGenerator> */}
+
+      25 <Quotes></Quotes>
     </div>
   );
 };
