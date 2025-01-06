@@ -24,7 +24,7 @@ import Digiclock from "./Digiclock";
 import Tooltip from "./Tooltip/Tooltip";
 import { BrowserRouter } from "react-router-dom";
 import Router from "./RouterApp/Router";
-import RandomQuoteGenerator from "./Quote/Quote";
+
 import Quotes from "./Quote/Quotes";
 
 const App = () => {
@@ -69,7 +69,7 @@ const App = () => {
       {/* 24<BrowserRouter>
         <Router></Router>
       </BrowserRouter> */}
-      {/* 25 <RandomQuoteGenerator></RandomQuoteGenerator> */}
+      
 
       25 <Quotes></Quotes>
     </div>

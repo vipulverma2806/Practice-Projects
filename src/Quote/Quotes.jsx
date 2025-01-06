@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-
+import './Quote.css'
 const Quotes = () => {
-  const [Loading, setLoading] = useState(false);
-  const [quote, setQuote] = useState();
-    
-  
+  const [Loading, setLoading] = useState(true);
+  const [quote, setQuote] = useState({});
+
   async function randomQuote() {
     const response = await fetch("https://dummyjson.com/quotes/random");
-    const quote1 = await response.json();
-    setQuote(quote1);
-    // console.log(quote.quote)
-    
+    const quoteObj = await response.json();
+    setQuote(quoteObj);
+    setLoading(false);
   }
-  useEffect(randomQuote(),[])
+  useEffect(() => {
+    randomQuote();
+  }, []);
   return (
     <div>
       Quotes
@@ -22,9 +22,9 @@ const Quotes = () => {
         <div>
           <div className="Quote-container">
             <div>{quote.quote}</div>
-            <div>{quote.author}</div>
+            <div className="author">-{quote.author}</div>
           </div>
-          <button onClick={randomQuote} className="refresh"></button>
+          <button onClick={randomQuote} className="refresh">Next</button>
         </div>
       )}
     </div>
