@@ -1,8 +1,8 @@
 import React from "react";
-import {One} from './One'
-import Two from './two'
-import Three from './Three';
-import Four from './four';
+import { One } from "./One";
+import Two from "./two";
+import Three from "./Three";
+import Four from "./four";
 import Five from "./Five";
 import Six from "./Six";
 import Seven from "./Seven";
@@ -26,6 +26,7 @@ import { BrowserRouter } from "react-router-dom";
 import Router from "./RouterApp/Router";
 
 import Quotes from "./Quote/Quotes";
+import UseFetchHookTest from "./CustomHooks/useFetchTest";
 
 const App = () => {
   const items = [
@@ -69,9 +70,9 @@ const App = () => {
       {/* 24<BrowserRouter>
         <Router></Router>
       </BrowserRouter> */}
-      
 
-      25 <Quotes></Quotes>
+      {/* 25 <Quotes></Quotes> */}
+      <UseFetchHookTest>26</UseFetchHookTest>
     </div>
   );
 };
