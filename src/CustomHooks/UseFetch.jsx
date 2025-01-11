@@ -1,29 +1,29 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const useFetch = (url) => {
-  const [data, setData] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState();
-  let dataObj;
-  async function fetchApi() {
+export default function useFetch(url, options = {}) {
+  const [data, setData] = useState(null);
+  const [pending, setPending] = useState(false);
+  const [error, setError] = useState(null);
+
+  async function fetchData() {
+    setPending(true);
     try {
-      const fetchedData = await fetch(url);  
+      const response = await fetch(url, { ...options });
+      if (!response.ok) throw new Error(response.statusText);
 
-      if (!fetchedData.ok) throw new Error(fetchedData.statusText);
-      dataObj = await fetchedData.json();
+      const result = await response.json();
+      setData(result);
+      setError(null);
+      setPending(false);
     } catch (e) {
-      setError(true);
-      setLoading(false);
+      setError(`${e}. Some Error Occured`);
+      setPending(false);
     }
   }
-  useEffect(() => {
-    fetchApi();
-    setData(dataObj);
-    setLoading(false);
-    setError(false);
-  }, []);
-  return <>{data}</>;
-};
 
-export default useFetch;
+  useEffect(() => {
+    fetchData();
+  }, [url]);
+
+  return { data, error, pending };
+}
