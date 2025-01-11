@@ -29,6 +29,7 @@ import Quotes from "./Quote/Quotes";
 import UseFetchHookTest from "./CustomHooks/useFetchTest";
 import ScrollToTopAndBottom from "./Scroll/scroll-to-top-and-bottom";
 import Progress from "./progress-bar/Progress";
+import StarRating from "./Star/index";
 
 const App = () => {
   const items = [
@@ -76,7 +77,8 @@ const App = () => {
       {/* 25 <Quotes></Quotes> */}
       {/* <UseFetchHookTest>26</UseFetchHookTest> */}
       {/* <ScrollToTopAndBottom>27</ScrollToTopAndBottom> */}
-      <Progress>28</Progress>
+      {/* <Progress>28</Progress> */}
+      <StarRating></StarRating>
     </div>
   );
 };
