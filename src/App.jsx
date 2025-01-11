@@ -27,6 +27,7 @@ import Router from "./RouterApp/Router";
 
 import Quotes from "./Quote/Quotes";
 import UseFetchHookTest from "./CustomHooks/useFetchTest";
+import ScrollToTopAndBottom from "./Scroll/scroll-to-top-and-bottom";
 
 const App = () => {
   const items = [
@@ -72,7 +73,8 @@ const App = () => {
       </BrowserRouter> */}
 
       {/* 25 <Quotes></Quotes> */}
-      <UseFetchHookTest>26</UseFetchHookTest>
+      {/* <UseFetchHookTest>26</UseFetchHookTest> */}
+      <ScrollToTopAndBottom>27</ScrollToTopAndBottom>
     </div>
   );
 };
