@@ -30,6 +30,7 @@ import UseFetchHookTest from "./CustomHooks/useFetchTest";
 import ScrollToTopAndBottom from "./Scroll/scroll-to-top-and-bottom";
 import Progress from "./progress-bar/Progress";
 import StarRating from "./Star/index";
+import BMICalculator from "./BMI/index";
 
 const App = () => {
   const items = [
@@ -75,10 +76,11 @@ const App = () => {
       </BrowserRouter> */}
 
       {/* 25 <Quotes></Quotes> */}
-      {/* <UseFetchHookTest>26</UseFetchHookTest> */}
-      {/* <ScrollToTopAndBottom>27</ScrollToTopAndBottom> */}
-      {/* <Progress>28</Progress> */}
-      <StarRating></StarRating>
+      {/* 26<UseFetchHookTest></UseFetchHookTest> */}
+      {/* 27<ScrollToTopAndBottom>27</ScrollToTopAndBottom> */}
+      {/* 28<Progress>28</Progress> */}
+      {/* 29<StarRating></StarRating> */}
+        <BMICalculator></BMICalculator>
     </div>
   );
 };
