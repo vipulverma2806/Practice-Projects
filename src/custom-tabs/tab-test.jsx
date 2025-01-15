@@ -17,7 +17,7 @@ export default function TabTest() {
     },
     {
       label: "Tab 3",
-      content: <RandomComponent />,
+      content:<div>This is content for Tab 2</div>,
     },
   ];
 
