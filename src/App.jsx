@@ -29,7 +29,8 @@ import ScrollToTopAndBottom from "./Scroll/scroll-to-top-and-bottom";
 import Progress from "./progress-bar/Progress";
 import StarRating from "./Star/index";
 import BMICalculator from "./BMI/index";
-import TabTest from "./custom-tabs/tab-test";
+import Tabs from "./custom-tabs/tabs";
+
 
 const App = () => {
   const items = [
@@ -77,7 +78,8 @@ const App = () => {
       {/* 27<Progress></Progress> */}
       {/* 28<StarRating></StarRating> */}
       {/* 29<BMICalculator></BMICalculator> */}
-      30 <TabTest></TabTest>
+      {/* 30 <Tabs></Tabs> */}
+      
     </div>
   );
 };

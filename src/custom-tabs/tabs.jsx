@@ -1,29 +1,45 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function Tabs({ tabsContent, onChange }) {
-  const [currentTabIndex, setCurrentTabIndex] = useState(0);
+import "./tabs.css";
+const Tabs = () => {
+  const [currentIndex, setIndex] = useState(0);
 
-  function handleOnClick(getCurrentIndex) {
-    setCurrentTabIndex(getCurrentIndex);
-    onChange(getCurrentIndex);
-  }
+  const Data = [
+    {
+      title: "Tab 1",
+      content: "This is first",
+    },
+    {
+      title: "Tab 2",
+      content: "This is Second",
+    },
+    {
+      title: "Tab 3",
+      content: "This is Third",
+    },
+  ];
+  const clicked = (e) => {
+    setIndex(e);
+  };
 
-  return (
-    <div className="wrapper">
-      <div className="heading">
-        {tabsContent.map((tabItem, index) => (
+  return (<>
+    <div className="container">
+      {Data.map((dataItem, index) => {
+        return (
           <div
-            className={`tab-item ${currentTabIndex === index ? "active" : ""}`}
-            onClick={() => handleOnClick(index)}
-            key={tabItem.label}
+            className={`tab ${currentIndex == index ? "active-tab" : ""}`}
+            onClick={()=>clicked(index)}
+            key={index + 1}
           >
-            <span className="label">{tabItem.label}</span>
+            Tab {index + 1}
           </div>
-        ))}
-      </div>
-      <div className="content" style={{ color: "red" }}>
-        {tabsContent[currentTabIndex] && tabsContent[currentTabIndex].content}
-      </div>
+        );
+      })}
+      
     </div>
+    <div className="Content">{Data[currentIndex].content}</div>
+    </>
   );
-}
+};
+
+export default Tabs;
