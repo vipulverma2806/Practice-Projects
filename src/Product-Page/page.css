@@ -1,0 +1,17 @@
+li{
+    all:unset;
+    align-self: center;
+}
+.navi{
+    display: flex;
+    justify-content: space-between;
+    gap:25px;
+}
+button{
+    all:unset;
+}
+.container{
+    all:unset;
+    display:flex;
+    justify-content: space-between;
+}

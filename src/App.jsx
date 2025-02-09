@@ -30,7 +30,7 @@ import Progress from "./progress-bar/Progress";
 import StarRating from "./Star/index";
 import BMICalculator from "./BMI/index";
 import Tabs from "./custom-tabs/tabs";
-
+import BrandPage from "./Product-Page/BrandPage";
 
 const App = () => {
   const items = [
@@ -79,7 +79,7 @@ const App = () => {
       {/* 28<StarRating></StarRating> */}
       {/* 29<BMICalculator></BMICalculator> */}
       {/* 30 <Tabs></Tabs> */}
-      
+      <BrandPage></BrandPage>
     </div>
   );
 };
