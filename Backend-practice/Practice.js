@@ -1,16 +1,20 @@
 let express = require("express");
 
-const { checkToken } = require("./CheckToken");
-require("dotenv").config();
+const { MongoClient } = require('mongodb');
 
 let app = express();
 app.use(express.json());
 
-console.log(process.env.MYToken);
+const url = 'mongodb://localhost:27017';
+const client = new MongoClient(url);
+const dbName = 'vipuldb';
 
-app.get("/", checkToken, (req, res) => {
-  console.log(req.query);
-  res.send({ auth: req.query.token });
+app.get("/readApi", (req, res) => {
+  
 });
 
-app.listen("8000");
+app.post("/insert",async(req,res)=>{
+  res.send("insert done")
+})
+
+app.listen("8000")
