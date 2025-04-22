@@ -34,6 +34,8 @@ import BrandPage from "./Product-Page/BrandPage";
 import FileUpload from "./FileUpload";
 import Translator from "./Translator";
 
+import CounterRedux from "./Redux/CounterRedux";
+
 const App = () => {
   const items = [
     "1",
@@ -83,7 +85,9 @@ const App = () => {
       {/* 30 <Tabs></Tabs> */}
       {/* 31 <BrandPage></BrandPage> */}
       {/* 32<FileUpload></FileUpload> */}
-      <Translator></Translator>
+      {/* 33<Translator></Translator> */}
+      {/* 34 <TasksComponent>  </TasksComponent> */}
+      35<CounterRedux></CounterRedux>
     </div>
   );
 };
