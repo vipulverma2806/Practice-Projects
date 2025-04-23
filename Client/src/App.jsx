@@ -21,7 +21,7 @@ import Multistate from "./Multistate";
 import Image from "./Image";
 import Digiclock from "./Digiclock";
 import Tooltip from "./Tooltip/Tooltip";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter,Route,Routes} from "react-router-dom";
 import Router from "./RouterApp/Router";
 import Quotes from "./Quote/Quotes";
 import UseFetchHookTest from "./CustomHooks/useFetchTest";
@@ -33,7 +33,8 @@ import Tabs from "./custom-tabs/tabs";
 import BrandPage from "./Product-Page/BrandPage";
 import FileUpload from "./FileUpload";
 import Translator from "./Translator";
-
+import ShoppingCart from "./Shopping/ShoppingCart";
+import Home from "./Shopping/Home";
 import CounterRedux from "./Redux/CounterRedux";
 
 const App = () => {
@@ -86,8 +87,14 @@ const App = () => {
       {/* 31 <BrandPage></BrandPage> */}
       {/* 32<FileUpload></FileUpload> */}
       {/* 33<Translator></Translator> */}
-      {/* 34 <TasksComponent>  </TasksComponent> */}
-      35<CounterRedux></CounterRedux>
+      {/* 34<CounterRedux></CounterRedux> */}
+
+      35<BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/cart" element={<ShoppingCart/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };

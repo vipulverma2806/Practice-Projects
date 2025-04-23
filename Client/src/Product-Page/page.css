@@ -7,9 +7,7 @@ li{
     justify-content: space-between;
     gap:25px;
 }
-button{
-    all:unset;
-}
+
 .container{
     all:unset;
     display:flex;
