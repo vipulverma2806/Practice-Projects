@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: olive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+#tri1 {
+  position: absolute;
+
+  width: 0px;
+  height: 0px;
+  border: 50px solid transparent;
+
+  border-right: 50px solid rgb(205, 56, 56);
+
+  top: 0;
+  left: 0px;
+  animation: tra1 3s infinite;
+}
+#tri2 {
+  position: absolute;
+
+  width: 0px;
+  height: 0px;
+  border: 50px solid transparent;
+
+  border-left: 50px solid rgb(205, 56, 56);
+
+  top: 0;
+  left: 0;
+  animation: tra2 3s infinite;
+}
+@keyframes tra1 {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes tra2 {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

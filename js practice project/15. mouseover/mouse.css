@@ -1,0 +1,36 @@
+#container {
+  background-color: rgb(250, 235, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contain {
+  margin: 50px;
+}
+.name {
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+.box {
+  border: 2px solid black;
+  text-align: center;
+
+  box-shadow: 10px 10px 10px;
+  border-radius: 20px;
+  height: 50px;
+  width: 150px;
+}
+span {
+
+  font-size: 40px;
+}

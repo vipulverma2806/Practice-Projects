@@ -1,0 +1,27 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+#container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(34, 31, 28);
+  box-shadow: 5px 5px 10px;
+}
+button {
+  background-color: greenyellow;
+  margin: 10px;
+  padding: 5px 25px;
+}
+button:hover {
+  background-color: green;
+}
+#text {
+  box-shadow: 0 0 5px;
+}

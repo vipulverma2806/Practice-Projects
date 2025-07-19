@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: thistle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.container {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 50px rgba(255, 0, 0, 0.8);
+}
+#num {
+  font-size: 70px;
+  font-weight: 700;
+}
+button {
+  margin: 6px;
+  padding: 10px 25px;
+  font-size: 20px;
+  color: antiquewhite;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+#sub {
+  background-color: rgb(178, 35, 35);
+}
+#set {
+  background-color: rgb(32, 32, 128);
+}
+#add {
+  background-color: rgb(33, 137, 33);
+}

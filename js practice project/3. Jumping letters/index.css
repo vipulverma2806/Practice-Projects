@@ -1,0 +1,21 @@
+body {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+span {
+  color: beige;
+  font-size: 100px;
+  font-weight: bold;
+  display: inline-block;
+}
+span.hover {
+  animation: jump 3s ease-in-out;
+}
+@keyframes jump {
+  50% {
+    transform: translate(0px, -100px) scale(2.5) rotate(360deg);
+  }
+}

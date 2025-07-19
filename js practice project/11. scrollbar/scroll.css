@@ -1,0 +1,26 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(106, 106, 159);
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 50px;
+  box-shadow: 10px 10px 10px;
+}
+#scroll {
+  position: fixed;
+  height: 20px;
+  width: 100vw;
+  background-color: rgb(43, 106, 215);
+  top: 0;
+  left: 0;
+}

@@ -21,7 +21,7 @@ import Multistate from "./Multistate";
 import Image from "./Image";
 import Digiclock from "./Digiclock";
 import Tooltip from "./Tooltip/Tooltip";
-import { BrowserRouter,Route,Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Router from "./RouterApp/Router";
 import Quotes from "./Quote/Quotes";
 import UseFetchHookTest from "./CustomHooks/useFetchTest";
@@ -36,6 +36,7 @@ import Translator from "./Translator";
 import ShoppingCart from "./Shopping/ShoppingCart";
 import Home from "./Shopping/Home";
 import CounterRedux from "./Redux/CounterRedux";
+import Expense from "./Expense";
 
 const App = () => {
   const items = [
@@ -89,12 +90,15 @@ const App = () => {
       {/* 33<Translator></Translator> */}
       {/* 34<CounterRedux></CounterRedux> */}
 
-      35<BrowserRouter>
+      {/* 35<BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/cart" element={<ShoppingCart/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+        36 <Expense></Expense>
+
     </div>
   );
 };

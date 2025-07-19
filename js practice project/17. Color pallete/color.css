@@ -1,0 +1,23 @@
+.color-card {
+  border: 2px solid black;
+  height: 100px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 6px;
+  font-weight: 1000;
+  font-size: 20px;
+}
+.contain {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     background-color: antiquewhite;     
+     box-shadow: 0px 0px 20px;
+     padding:10px;
+     border-radius: 20px;
+}

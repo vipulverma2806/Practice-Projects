@@ -1,0 +1,17 @@
+body{
+    background-color: antiquewhite;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#container{
+    background-color: rgb(202, 154, 91);
+    padding: 80px;
+    width: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

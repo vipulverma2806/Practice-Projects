@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(158, 126, 188);
+  height: 100vh;
+}
+#container {
+  background-color: antiquewhite;
+  padding: 10px;
+  border: 4px solid black;
+  border-radius: 9px;
+  height: 25%;
+  width: 40%;
+}
+#head {
+  background: #661111;
+  color: white;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 6px;
+  text-align: center;
+}
+input {
+  width: 100%;
+}

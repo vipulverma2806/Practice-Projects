@@ -1,0 +1,24 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.active {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 400px !important;
+  border-radius: 100px;
+}
+#search {
+  position: relative;
+  left: -48px;
+}
+.input {
+  outline: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}

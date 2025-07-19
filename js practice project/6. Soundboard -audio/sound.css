@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: antiquewhite;
+}
+button{
+    margin:5px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(67, 188, 67);
+    border-radius:4px;
+    cursor: pointer;
+}
+button:hover{
+    background: #f36565;
+}
