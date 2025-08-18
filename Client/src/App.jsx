@@ -36,7 +36,8 @@ import Translator from "./Translator";
 import ShoppingCart from "./Shopping/ShoppingCart";
 import Home from "./Shopping/Home";
 import CounterRedux from "./Redux/CounterRedux";
-import Expense from "./Expense";
+// import Expense from "./Expense";
+import SocketTest from "./SocketTest"
 
 const App = () => {
   const items = [
@@ -97,7 +98,8 @@ const App = () => {
         </Routes>
       </BrowserRouter> */}
 
-        36 <Expense></Expense>
+        {/* 36 <Expense></Expense> */}
+        37 <SocketTest></SocketTest>
 
     </div>
   );
